@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/14dc6676a0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1 {
+            font-size: x-large;
+        }
+
+        .name-and-pic {
+            display: flex;
+            width: 100%;
+        }
+
+        .pic {
+            width: 30%;
+        }
+
+        .profile-pic {
+            width: 100%;
+            border-radius: 10px;
+
+        }
+
+        .name {
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .info {
+            width: 100%;
+            display: flex;
+            border-radius: 5px;
+            margin-top: 20px;
+            background: transparent;
+            word-break: break-all;
+            transition: .8s;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        }
+
+        .info:hover {
+            background: black;
+            color: whitesmoke;
+        }
+
+        .svg {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .svg i {
+            font-size: 30px;
+        }
+
+        .email-address {
+            width: 70%;
+        }
+
+        h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 22px;
+        }
+
+        .main-display {
+            width: 100vw;
+            min-height: 100vh;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 30% 68%;
+            grid-gap: 2%;
+            background: whitesmoke;
+        }
+
+        .right-info {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            transition: 2s;
+            border-radius: 10px;
+            transform: translateY(200%);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .right-info .container {
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            transition: 2s;
+            border-radius: 10px;
+            transform: translateY(-200%);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .contatti {
+            margin-top: 20px;
+            padding: 5px;
+        }
+
+        .right-info i {
+            font-size: 35px;
+            margin: 20px;
+        }
+
+        .cv {
+            display: flex;
+            align-items: center;
+        }
+
+        .body {
+            list-style: none;
+        }
+
+        .cv-container {
+            transition: .5s;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255,
+                    255, 0.1) 0px 0px 0px 1px inset;
+        }
+
+        .cv-container:hover {
+            transform: scale(1.02);
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        @media screen and (max-width: 900px) {
+            .main-display {
+                grid-template-columns: 100%;
+                padding: 5px;
+            }
+
+            p {
+                font-size: smaller;
+            }
+
+            h1 {
+                font-size: medium;
+            }
+
+            .container {
+                margin: 0;
+            }
+
+            .right-info .container {
+                padding: 10px;
+            }
+
+            li {
+                font-size: smaller;
+            }
+        }
+    </style>
+    <title>Marco Paternosto Frosi</title>
+</head>
+
+<body>
+    <div class="main-display">
+        <div class="container">
+            <div class="name-and-pic">
+                <div class="pic">
+                    <img src="profile_pic.jpg" class="profile-pic" alt="">
+                </div>
+                <div class="name">
+                    <h1>Marco Paternosto Frosi</h1>
+                </div>
+            </div>
+            <div class="contatti">
+                <div class="info">
+                    <div class="svg">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="email-address">
+                        <p>marco.paternosto@outlook.it</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="svg">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="phone-address">
+                        <p>+39 3455881205</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="svg">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="phone-address">
+                        <p>Italy, Rome, Pomezia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-info">
+            <div class="cv-container">
+                <div class="cv">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h1>Formazione</h1>
+                </div>
+                <ul class="body">
+                    <li>Freaquentazione del corso di laurea in ingegneria informatica</li>
+                    <li>- Oltre 60 ore di corso relativo al web development tenuto online dal famoso istruttore Colt
+                        Steele</li>
+                    <li>- ottima conoscenza di HTML, CSS, JavaScript</li>
+                    <li>- gestione server attraverso nodeJS</li>
+                    <li>- 20 ore di corso relativo a git e github</li>
+                    <li>- 20 di corso per database mySql</li>
+                    <li>- conoscenza di base del linguaggio Python</li>
+                    <li>- fondamenti di QT e QML</li>
+                </ul>
+            </div>
+            <div class="cv-container">
+                <div class="cv">
+                    <i class="fas fa-briefcase"></i>
+                    <h1>Esperienze Lavorative</h1>
+                </div>
+                <ul class="body">
+                    <li>- 6 mesi presso EPYGENESYS.srl come sviluppatore software per interfaccie
+                        grafiche</li>
+                    <li>- Sviluppo indipendente di siti aziendali o personali</li>
+                </ul>
+            </div>
+            <div class="cv-container">
+                <div class="cv">
+                    <i class="fas fa-globe-americas"></i>
+                    <h1>Lingue e Linguaggi</h1>
+                </div>
+                <ul class="body">
+                    <li>- Italiano: Madrelingua</li>
+                    <li>- Inglese: B2 certificato</li>
+                    <li>- Francese: A2</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        let left_info = document.querySelector(".container")
+        let right_info = document.querySelector(".right-info")
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                left_info.style.transform = "translateY(0)"
+                right_info.style.transform = "translateY(0)"
+            }, 1000);
+        })
+    </script>
+</body>
+
+</html>
